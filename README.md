@@ -1,12 +1,12 @@
 # NanoC6 Zigbee Project
 
-- IDF v5.2-beta2 tag
-- commit: b4a612345be8fa70be8321a6a491baf813a74c4d
+![pic_01](./assets/pic_01.jpg)
 
 ## Setting up the Repositories
 
-### IDF v5.2
+### IDF v5.2.2
 
+commit: 3b8741b172dc951e18509698dee938304bcf1523
 
     git clone --recursive https://github.com/espressif/esp-idf.git
     cd esp-idf
@@ -28,5 +28,4 @@ Cloning esp-zigbee-sdk:
     cd build/
     esptool.py --chip ESP32 merge_bin -o env_sensor-merged-flash.bin @flash_args 
 
-![pic_01](./assets/pic_01.jpg)
 
