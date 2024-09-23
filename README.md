@@ -23,7 +23,16 @@ Cloning esp-zigbee-sdk:
 
 ## Build
 
-    end_device/env_sensor
+### Zigbee gateway
+
+    cd oordinator/esp_zigbee_gateway
+    idf.py build
+    cd build/
+    esptool.py --chip ESP32 merge_bin -o zigbee_gateway-merged-flash.bin @flash_args 
+    
+### Zigbee Env sensor
+
+    cd end_device/env_sensor
     idf.py build
     cd build/
     esptool.py --chip ESP32 merge_bin -o env_sensor-merged-flash.bin @flash_args 
