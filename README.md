@@ -26,6 +26,10 @@ Cloning esp-zigbee-sdk:
 ### Zigbee gateway
 
     cd oordinator/esp_zigbee_gateway
+    cd components
+    rm -rf LovyanGFX
+    git clone https://github.com/lovyan03/LovyanGFX
+    cd ..
     idf.py build
     cd build/
     esptool.py --chip ESP32 merge_bin -o zigbee_gateway-merged-flash.bin @flash_args 
