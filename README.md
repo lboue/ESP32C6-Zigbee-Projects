@@ -2,6 +2,16 @@
 
 ![pic_01](./assets/pic_01.jpg)
 
+## Zigbee controller
+
+M5 CORE BASIC controller
+
+| Button | Usage        | GPIO   |
+|--------|--------------|--------|
+| A      |              | GPIO39 |
+| B      | Light switch | GPIO38 |
+| C      |              | CPIO37 |
+
 ## Setting up the Repositories
 
 ### IDF v5.2.2
